@@ -1,6 +1,3 @@
-/************************************/
-/* 1) Fake "Hacking" / Loading Bar  */
-/************************************/
 
 const messages = [
     "Initializing Mangebac backdoor access...",
