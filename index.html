@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>System Breach Detected</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body onload="startPrank()">
+  <!-- The music -->
+  <audio id="hacking-sound" src="bellaciao.mp3" loop></audio>
+
+  <!-- Title at the top -->
+  <h1 class="main-title">Mangebac System Breach</h1>
+
+  <div class="fullscreen">
+    <div class="terminal">
+      <pre id="output"></pre>
+
+      <div class="loading-bar-container">
+        <div class="loading-bar"></div>
+      </div>
+
+      <!-- This button appears after the fake hack finishes -->
+      <button id="continueBtn" style="display:none;" onclick="startTetris()">
+        Continue with Verification
+      </button>
+    </div>
+  </div>
+
+  <!-- Hidden Tetris container (shown after user clicks the button) -->
+  <div id="tetris-container" style="display: none;">
+    <canvas id="tetris" width="200" height="400"></canvas>
+    <p class="tetris-instructions">
+      Use Arrow Keys to Move & Rotate<br/>
+      Good luck, hacker! 
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
