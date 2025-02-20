@@ -1,0 +1,89 @@
+/* Basic page styling */
+body {
+    background-color: black;
+    color: lime;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  /* Title styling */
+  .main-title {
+    margin-top: 10px;
+    font-size: 1.5em;
+  }
+  
+  /* Fullscreen container for the "terminal" section */
+  .fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Terminal-like box */
+  .terminal {
+    width: 80%;
+    max-width: 800px;
+    background: black;
+    border: 2px solid lime;
+    padding: 20px;
+    text-align: left;
+    white-space: pre-wrap;
+    overflow: hidden;
+    height: 300px;
+  }
+  
+  /* Loading bar container */
+  .loading-bar-container {
+    width: 100%;
+    height: 10px;
+    background-color: grey;
+    margin-top: 10px;
+    overflow: hidden;
+  }
+  
+ 
+  .loading-bar {
+    height: 100%;
+    width: 0%;
+    background-color: lime;
+    transition: width 1.5s ease-in-out;
+  }
+  
+  
+  #continueBtn {
+    margin-top: 20px;
+    background-color: lime;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    font-size: 1em;
+  }
+  
+ 
+  #tetris-container {
+    margin-top: 20px;
+  }
+  
+  
+  .tetris-instructions {
+    color: lime;
+    font-size: 1em;
+    margin-top: 10px;
+  }
+  
+ 
+  #tetris {
+    border: 2px solid lime;
+    background: black;
+  }
+  
